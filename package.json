@@ -1,0 +1,55 @@
+{
+  "name": "magpie-gemini-media-tools",
+  "version": "0.1.1",
+  "description": "Gemini media tools MCP hook plugin for Magpie (image generation, editing, media analysis, TTS)",
+  "type": "module",
+  "main": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "magpie",
+    "magpie-plugin",
+    "opencode",
+    "opencode-plugin",
+    "mcp",
+    "gemini",
+    "media-tools",
+    "image-generation",
+    "tts"
+  ],
+  "author": "qq136692547-cmyk",
+  "homepage": "https://github.com/qq136692547-cmyk/magpie-gemini-media-tools#readme",
+  "bugs": {
+    "url": "https://github.com/qq136692547-cmyk/magpie-gemini-media-tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qq136692547-cmyk/magpie-gemini-media-tools.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test index.test.mjs"
+  },
+  "magpie": {
+    "name": "Gemini Media Tools",
+    "icon": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect x='3' y='3' width='18' height='18' rx='3' fill='none' stroke='%234285F4' stroke-width='2'/><circle cx='9' cy='9' r='2' fill='%23EA4335'/><circle cx='15' cy='15' r='2' fill='%2334A853'/></svg>",
+    "maxConcurrency": 4,
+    "options": {
+      "apiKey": "AIza...",
+      "imageModel": "gemini-nano-banana-2.1",
+      "mediaModel": "gemini-3.8-flash",
+      "ttsModel": "gemini-3.8-flash-tts",
+      "restrictToWorkspace": false
+    },
+    "summary": {
+      "en": "Gemini media tools: image generation, image editing, media analysis, and text-to-speech.",
+      "zh": "Gemini 媒体工具集：支持生图、改图、媒体分析和文字转语音。"
+    }
+  }
+}
